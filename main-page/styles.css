@@ -1,0 +1,34 @@
+#vitruvian {
+    width: auto;
+    height: 80vw;
+    display: block;
+}
+
+#buttons-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left-button{
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    border: none;
+    z-index: 10;
+}
+
+#right-button{
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    border: none;
+    z-index: 10;
+}

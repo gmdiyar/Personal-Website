@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Steganography is hiding messages in other mediums such as encoding a password (in binary) and imbedding it in between the meta data and the content data of a image file.
+    Some other adjacent terms:
+    - Data masking: involves copying data of the original and making it unintelligible.
+    - Tokenization: obfuscating sensitive data **elements** into a random string of characters (tokens.)
+    ---
+    While steganography hides the existence of the message itself, **cryptography** aims to hide the meaning of the message itself.
+    The process of changing the original message into an encrypted one is called encryption, while the opposite operation is decryption
+    Other terms:
+    - Plaintext: Unencrypted data that is to be encrypted.
+    - Ciphertext: encrypted plaintext.
+    - Cleartext: plaintext what is not meant to be encrypted; 'in the clear'.
+
+    The method by which plaintext is encrypted is though an encryption algorithm (or cipher.) Since encryption algorithms internally function using reversable mathematical formulas, a **key** can be used to reverse that encryption (decryption.) 
+    ****
+    [!Side note:]
+    Side note: cryptography is used to protect data in its three states: **data at rest, data in use, and data in transit.**
+
+    ### Hash Algorithms
+    A hash algorithm is designed to unreversible encrypt a message. This is useful for checking whether or not a file has been tampered with. An example would be SHA256
+    #### Symmetric Cryptographic Algorithms
+    Symmetric Cryptographic Algorithms use the same key to encrypt and decrypt a message. Because of this characteristic, it is essential that the key is kept private between the parties exchanging data.
+
+    #### Asymmetric Cryptographic Algorithms
+    A main flaw with symmetric algorithms is that the key shared between the people sharing data cannot be transferred in plaintext and has to be encrypted itself. But how can we encrypt the key that is needed for decryption when the recipient does not have any way to decrypt it? That is the problem that asymmetric cryptographic algorithms solve. These algorithms use two keys: a private key and a public key. These two keys are both mathematically related and thus can be used to reverse encryption. The data is encrypted using a public key and decrypted using the recipient's private key. This also works both ways.
+
+    #### Digital Signatures
+    A digital signature is used to prove the identity of the sender. 
+</body>
+</html>
